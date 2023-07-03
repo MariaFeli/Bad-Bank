@@ -8,9 +8,10 @@ function Home(){
       text="You can move around using the navigation bar."
       body={(<img src="bank.png" className="img-fluid" alt="Responsive image"/>)}
     />  
+   <div>
     <h1>Home<br/>
       {JSON.stringify(ctx.users)}
     </h1>
-    </>
+    </div>
   );  
 }
