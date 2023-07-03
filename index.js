@@ -8,7 +8,7 @@ function Spa() {
   return (
  <HashRouter>
      <div>
-    <h1>Routing - Welcome to Bad Bank</h1>
+    <h1>Welcome to Bad Bank</h1>
     <div className="container" style={{padding: "20px"}}>
           <Link to="/">Home</Link> -- 
           <Link to="/about/">About</Link> -- 
