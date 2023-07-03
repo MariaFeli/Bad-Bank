@@ -1,6 +1,5 @@
 function Spa() {
   return (
-      <>
       <h1>Welcome to Bad Bank</h1>
      <HashRouter>
       <NavBar/>
