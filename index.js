@@ -2,18 +2,9 @@ function Spa() {
   return (
       <>
       <h1>Welcome to Bad Bank</h1>
+     <HashRouter>
       <NavBar/>
-      </>
-  );
-}
-
-ReactDOM.render(
-  <Spa/>,
-  document.getElementById('root')
-
-    <HashRouter>
-      <NavBar/>        
-   <UserContext.Provider value={{users:[{name:'abel',email:'abel@mit.edu',password:'secret',balance:100}]}}>   
+     <UserContext.Provider value={{users:[{name:'abel',email:'abel@mit.edu',password:'secret',balance:100}]}}>   
    <div className="container" style={{padding: "20px"}}>
       <Route path="/" exact component={Home} />
       <Route path="/CreateAccount/" component={CreateAccount} />
@@ -25,6 +16,12 @@ ReactDOM.render(
    </div>                    
       </UserContext.Provider> 
     </HashRouter>
+      </>
+
+ReactDOM.render(
+  <Spa/>,
+  document.getElementById('root')       
+  
   );
 }
 
