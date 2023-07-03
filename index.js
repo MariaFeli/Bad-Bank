@@ -27,16 +27,16 @@ function Spa() {
       <Route path="/withdraw/" component={Withdraw} />
       <Route path="/balance/" component={Balance} />
       <Route path="/alldata/" component={AllData} />
+  </UserContext.Provider> 
    </div>                    
-      </UserContext.Provider> 
     </HashRouter>
-      </>
+
+  );
+}
 
 ReactDOM.render(
   <Spa/>,
-  document.getElementById('root')       
-  
-  );
-}
+  document.getElementById('root')
+);
 
 
