@@ -9,9 +9,8 @@ function Home(){
       body={(<img src="bank.png" className="img-fluid" alt="Responsive image"/>)}
     />  
     <h1>Home<br/>
-      {JSON.stringify(ctx)}
+      {JSON.stringify(ctx.users)}
     </h1>
     </>
   );  
 }
-
